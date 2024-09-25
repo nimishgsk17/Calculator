@@ -1,16 +1,36 @@
 ---
-- name: Pull Docker Image of Calculator
+- name: Deploy Calculator Docker Image
   hosts: localhost
   vars:
     ansible_python_interpreter: /usr/bin/python3
   tasks:
-    - name: Pull image
+    - name: Pull Docker Image of Calculator
       docker_image:
         name: nimishgsk/calculator:latest
         source: pull
-    - name: Start docker service
+
+    - name: Ensure Docker service is started
       service:
         name: docker
         state: started
-    - name: Running container
-      shell: docker run -it -d --name Calculator nimishgsk/calculator
+
+    - name: Stop existing container (if running)
+      docker_container:
+        name: Calculator
+        state: stopped
+        ignore_errors: yes  # Ignore errors if the container is not running
+
+    - name: Remove existing container (if present)
+      docker_container:
+        name: Calculator
+        state: absent
+        ignore_errors: yes  # Ignore errors if the container doesn't exist
+
+    - name: Start a new Calculator container
+      docker_container:
+        name: Calculator
+        image: nimishgsk/calculator:latest
+        state: started
+        restart_policy: always
+        ports:
+          - "80:80"
