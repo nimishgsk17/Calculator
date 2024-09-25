@@ -1,0 +1,17 @@
+2024-09-25 17:43:26.452 [main] INFO  org.example.Main - Calculator Begins!!
+2024-09-25 17:43:36.095 [main] INFO  org.example.Main - Executing addition for 4.0 and 5.0. Result: 9.0
+
+2024-09-25 17:51:29.286 [main] INFO  org.example.Main - Executing subtraction for 10.0 and 4.0. Result: 6.0
+
+2024-09-25 17:51:29.288 [main] INFO  org.example.Main - Executing addition for 3.0 and 7.0. Result: 10.0
+
+2024-09-25 17:51:29.289 [main] INFO  org.example.Main - Executing multiplication for 5.0 and 6.0. Result: 30.0
+
+2024-09-25 17:51:29.289 [main] INFO  org.example.Main - Executing percentile operation for 50.0 and 200.0. Result: 50.0
+
+2024-09-25 17:53:27.270 [main] INFO  org.example.Main - Executing subtraction for 10.0 and 4.0. Result: 6.0
+
+2024-09-25 17:53:27.272 [main] INFO  org.example.Main - Executing addition for 3.0 and 7.0. Result: 10.0
+
+2024-09-25 17:53:27.273 [main] INFO  org.example.Main - Executing multiplication for 5.0 and 6.0. Result: 30.0
+
