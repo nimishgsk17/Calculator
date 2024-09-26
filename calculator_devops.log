@@ -22,3 +22,37 @@
 
 2024-09-26 12:22:25.738 [main] INFO  org.example.Main - Executing power function for 6.0 and -1.0. Result: 0.16666666666666666
 
+2024-09-26 14:25:12.772 [main] INFO  org.example.Main - Executing subtraction for 10.0 and 4.0. Result: 6.0
+
+2024-09-26 14:25:12.775 [main] INFO  org.example.Main - Executing addition for 3.0 and 7.0. Result: 10.0
+
+2024-09-26 14:25:12.776 [main] INFO  org.example.Main - Executing multiplication for 5.0 and 6.0. Result: 30.0
+
+2024-09-26 14:28:02.183 [main] INFO  org.example.Main - Executing natural logarithm for 2.718281828459045. Result: 1.0
+
+2024-09-26 14:28:02.189 [main] INFO  org.example.Main - Executing factorial for 5. Result: 120
+
+2024-09-26 14:28:02.190 [main] INFO  org.example.Main - Executing square root for 16.0. Result: 4.0
+
+2024-09-26 14:28:02.191 [main] INFO  org.example.Main - Executing subtraction for 10.0 and 4.0. Result: 6.0
+
+2024-09-26 14:28:02.192 [main] INFO  org.example.Main - Executing addition for 3.0 and 7.0. Result: 10.0
+
+2024-09-26 14:28:02.192 [main] INFO  org.example.Main - Executing multiplication for 5.0 and 6.0. Result: 30.0
+
+2024-09-26 14:28:02.193 [main] INFO  org.example.Main - Executing power function for 2.0 and 3.0. Result: 8.0
+
+2024-09-26 14:28:30.443 [main] INFO  org.example.Main - Executing natural logarithm for 2.718281828459045. Result: 1.0
+
+2024-09-26 14:28:30.449 [main] INFO  org.example.Main - Executing factorial for 5. Result: 120
+
+2024-09-26 14:28:30.450 [main] INFO  org.example.Main - Executing square root for 16.0. Result: 4.0
+
+2024-09-26 14:28:30.452 [main] INFO  org.example.Main - Executing subtraction for 10.0 and 4.0. Result: 6.0
+
+2024-09-26 14:28:30.453 [main] INFO  org.example.Main - Executing addition for 3.0 and 7.0. Result: 10.0
+
+2024-09-26 14:28:30.453 [main] INFO  org.example.Main - Executing multiplication for 5.0 and 6.0. Result: 30.0
+
+2024-09-26 14:28:30.454 [main] INFO  org.example.Main - Executing power function for 2.0 and 3.0. Result: 8.0
+
