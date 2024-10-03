@@ -1,16 +1,27 @@
 ---
-- name: Pull Docker Image of Calculator
+- name: Pull Docker Image of Calculator and Manage Container
   hosts: localhost
   vars:
     ansible_python_interpreter: /usr/bin/python3
   tasks:
-    - name: Pull image
+    - name: Check if Calculator container exists
+      shell: docker ps -a --filter "name=Calculator" --format "{{.Names}}"
+      register: container_exists
+      ignore_errors: true
+
+    - name: Remove existing Calculator container if present
+      shell: docker rm -f Calculator
+      when: container_exists.stdout != ""
+
+    - name: Pull the latest image of Calculator
       docker_image:
         name: nimishgsk/calculator:latest
         source: pull
-    - name: Start docker service
+
+    - name: Ensure Docker service is running
       service:
         name: docker
         state: started
-    - name: Running container
+
+    - name: Run new Calculator container
       shell: docker run -it -d --name Calculator nimishgsk/calculator
