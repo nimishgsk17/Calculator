@@ -6,7 +6,7 @@
   tasks:
     - name: Pull image
       docker_image:
-        name: nimishgsk17/calculator:latest
+        name: nimishgsk/calculator:latest
         source: pull
 
     - name: Stop existing container
@@ -21,4 +21,4 @@
         state: started
 
     - name: Running container
-      shell: docker run -it -d --name Calculator nimishgsk17/calculator
+      shell: docker run -it -d --name Calculator nimishgsk/calculator
