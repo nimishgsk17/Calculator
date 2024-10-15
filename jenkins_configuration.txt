@@ -49,16 +49,15 @@ pipeline{
             }
         }
         
-        stage('Stage 5: Clean docker images')
+        stage('Stage 5: Clean Calculator docker images') 
         {
-            steps
+            steps 
             {
-                script
+                script 
                 {
-                    sh 'docker container prune -f'
-                    sh 'docker image prune -f'
+                    sh 'docker rm -f Calculator || true'
+                    sh 'docker images nimishgsk/calculator -q | xargs -r docker rmi -f'
                 }
-                
             }
         }
         
